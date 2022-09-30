@@ -76,7 +76,7 @@ body {
 /*---------------------------------------------------------------- HEADER -------------------------------------------------- */
 
 .top {
-  /* width: 1600px; */
+  width: 1600px;
   margin: 0 auto;
   background-color: var(--primary-white-color);
   border-bottom: 1px solid #ececec;
@@ -332,8 +332,8 @@ body {
 
 .empl {
   background-color: var(--bg-empl);
-  /* width: 1600px; */
-  /* margin: 0 auto; */
+  width: 1600px;
+  margin: 0 auto;
 }
 
 .empl-title {
@@ -372,7 +372,7 @@ body {
 .empl-text {
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 
 .bgc {
@@ -380,6 +380,40 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.empl-contact {
+  width: 206px;
+  height: 44px;
+  margin-left: 32px;
+  margin-bottom: 30px;
+}
+
+.empl-ct-item {
+  display: flex;
+  gap: 10px;
+}
+
+.empl-ct-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+
+.empl-ct-icon {
+  fill: var(--clients-color);
+}
+
+.empl-ct-link:hover  .empl-ct-icon {
+  fill: var(--primary-white-color);
+}
+
+.empl-ct-item .empl-ct-link:hover,
+.empl-ct-item .empl-ct-link:focus {
+  background-color: var(--accent-color);
+  border-radius: 100%;
 }
 
 /*---------------------------------------------------------------- END EMPL ---------------------------------------------------*/
@@ -426,8 +460,8 @@ body {
 
 .footer {
   background-color: var(--bg-footer-color);
-  /* width: 1600px; */
-  /* margin: 0 auto; */
+  width: 1600px;
+  margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
 }
