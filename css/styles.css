@@ -406,7 +406,7 @@ body {
   fill: var(--clients-color);
 }
 
-.empl-ct-link:hover  .empl-ct-icon {
+.empl-ct-link:hover .empl-ct-icon {
   fill: var(--primary-white-color);
 }
 
