@@ -46,7 +46,7 @@ button {
 
 body {
   background-color: var(--primary-white-color);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--primary-text-color);
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -76,15 +76,13 @@ body {
 /*---------------------------------------------------------------- HEADER -------------------------------------------------- */
 
 .top {
-  width: 1600px;
-  margin: 0 auto;
   background-color: var(--primary-white-color);
   border-bottom: 1px solid #ececec;
 }
 
 .logo {
   color: var(--accent-color);
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -200,10 +198,7 @@ body {
   margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../img/bg-top.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -260,7 +255,7 @@ body {
   gap: 30px;
 }
 
-.features-item {
+.features-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -268,6 +263,7 @@ body {
   height: 120px;
   background: var(--bg-empl);
   border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .features-title {
@@ -332,8 +328,6 @@ body {
 
 .empl {
   background-color: var(--bg-empl);
-  width: 1600px;
-  margin: 0 auto;
 }
 
 .empl-title {
@@ -406,12 +400,13 @@ body {
   fill: var(--clients-color);
 }
 
-.empl-ct-link:hover .empl-ct-icon {
+.empl-ct-link:hover .empl-ct-icon,
+.empl-ct-link:focus .empl-ct-icon {
   fill: var(--primary-white-color);
 }
 
-.empl-ct-item .empl-ct-link:hover,
-.empl-ct-item .empl-ct-link:focus {
+.empl-ct-link:hover,
+.empl-ct-link:focus {
   background-color: var(--accent-color);
   border-radius: 100%;
 }
@@ -429,15 +424,13 @@ body {
 
 .clients-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
 }
 
-.clients-item {
+.clients-link {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 170px;
   height: 92px;
   border: 1px solid var(--clients-color);
@@ -448,20 +441,19 @@ body {
   fill: var(--clients-color);
 }
 
-.clients-item:hover .client-icon {
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
+}
+
+.clients-link:hover .client-icon,
+.clients-link:focus .client-icon {
   fill: var(--accent-color);
 }
-
-.clients-list .clients-item:hover {
-  border: 1px solid var(--accent-color);
-}
-
 /*---------------------------------------------------------------- FOOTER -----------------------------------------------------*/
 
 .footer {
   background-color: var(--bg-footer-color);
-  width: 1600px;
-  margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -477,7 +469,7 @@ body {
 
 .logo-footer {
   color: var(--accent-color);
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -509,7 +501,7 @@ address .link:focus {
 .google-link {
   color: var(--primary-white-color);
   text-decoration: none;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -639,7 +631,12 @@ address .link:focus {
   flex-basis: calc(100% / 3 - 30px);
 }
 
-.portfolio-item:hover {
+.ptf-link {
+  display: block;
+}
+
+.ptf-link:hover,
+.ptf-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
